@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <div class="layer"></div>
+  <!-- ! Body -->
+  <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+      <div class="page-flex">
+        <!-- ! Sidebar -->
+        <SideBar/>
+        <div class="main-wrapper">
+          <!-- ! Main nav -->
+          <NavBar/>
+          <!-- ! Main -->
+          <MainAdmin/>
+          <!-- ! Footer -->
+
+      </div>
+  </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SideBar from './components/SideBar.vue';
+import NavBar from './components/NavBar.vue';
+import MainAdmin from './components/MainAdmin.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    SideBar,
+    NavBar,
+    MainAdmin,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
