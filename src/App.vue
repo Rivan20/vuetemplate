@@ -10,18 +10,23 @@
           <!-- ! Main nav -->
           <NavBar/>
           <!-- ! Main -->
-          <MainAdmin/>
+          <!-- <MainTable/> -->
+         <MainAdmin/>
           <!-- ! Footer -->
-
+          
       </div>
   </div>
 </template>
 
-
+  
 <script>
 import SideBar from './components/SideBar.vue';
 import NavBar from './components/NavBar.vue';
 import MainAdmin from './components/MainAdmin.vue';
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import MainTable from './components/MainTable.vue';
+
 
 export default {
   name: "App",
@@ -29,6 +34,7 @@ export default {
     SideBar,
     NavBar,
     MainAdmin,
-  }
+    // MainTable
+}
 }
 </script>

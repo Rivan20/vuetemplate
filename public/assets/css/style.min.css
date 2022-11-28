@@ -9,8 +9,17 @@
     border-style: none;
 }
 
+.card-editor{
+  width: 90%;
+  height: 457px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.25);
+  margin-top: 5%;
+  margin-left:5%;
+}
+
 .stat-cards-item-white {
-    padding: 24px 19px;
+    padding: 24px 20px;
     margin-top: -15px;
     background-color: #ffffff;
     box-shadow: 0 15px 50px rgb(160 163 189 / 10%);
