@@ -21,7 +21,11 @@
                     <article class="stat-cards-item">
                     <div class="stat-cards-info">
                         <p class="stat-cards-info__num">New Article Report</p>
-                        <p class="stat-cards-info__title">69</p>
+                        <div id="card">
+                            <p class="stat-cards-info__title"> 69
+                                {{info_article_report}}
+                            </p>
+                        </div>
                         <p class="stat-cards-info__progress">
                         <span class="stat-cards-info__profit success">
                             <a href="">
@@ -70,18 +74,20 @@
 </template>
 
 <script>
-// import axios from "axios";
-// export default {
-//     data() {
-//     return {
-//         form:{
-//             jumlah: ""
-//         },
-//         article: [],
-
-//     };
-//     }
-// }
+import axios from "axios";
+export default {
+    el: '#card',
+    data() {
+    return {
+        info_article: null
+    }
+    },
+    mounted () {
+    axios
+    .get('p')
+    .then(response => (this.info_article = response))
+    }
+}
 </script>
 
 <style scoped>
