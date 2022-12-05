@@ -40,7 +40,11 @@
                     <article class="stat-cards-item1">
                     <div class="stat-cards-info">
                         <p class="stat-cards-info__num">New Kontributor Report</p>
-                        <p class="stat-cards-info__title">69</p>
+                        <div id="card">
+                            <p class="stat-cards-info__title"> 69
+                                {{info_kontributor_report}}
+                            </p>
+                        </div>
                         <p class="stat-cards-info__progress">
                         <span class="stat-cards-info__profit success">
                             <a href="">
@@ -55,7 +59,11 @@
                     <article class="stat-cards-item2">
                     <div class="stat-cards-info">
                         <p class="stat-cards-info__num">New Kontributor Registration</p>
-                        <p class="stat-cards-info__title">69</p>
+                        <div id="card">
+                            <p class="stat-cards-info__title"> 69
+                                {{info_kontributor_regisgtrasi}}
+                            </p>
+                        </div>
                         <p class="stat-cards-info__progress">
                         <span class="stat-cards-info__profit danger">
                             <a href="">
@@ -79,7 +87,9 @@ export default {
     el: '#card',
     data() {
     return {
-        info_article: null
+        info_article: null,
+        info_kontributor_report: null,
+        info_kontributor_regisgtrasi: null,
     }
     },
     mounted () {
